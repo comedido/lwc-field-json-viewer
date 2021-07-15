@@ -1,0 +1,13 @@
+<template>
+    <lightning-card
+        title="JSON Viewer"
+        icon-name="utility:freeze_column">
+        <template if:true={customLog.data}>
+            <div class="slds-m-around_medium">
+                <p class="jsoncanvas">
+                    <lightning-button label="View" title="View Json" onclick={init} class="slds-m-left_x-small"></lightning-button>
+                </p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
